@@ -619,6 +619,7 @@ footer {
   color: #bbb;
   text-decoration: none;
   transition: color 0.3s;
+  pointer-events: auto; /* Убедимся, что клики разрешены */
 }
 
 .contacts a:hover {
@@ -664,6 +665,7 @@ footer {
     display: flex;
     width: 25px;
     height: 18px;
+    margin-right: 12px; /* Добавляем отступ справа для отделения от кнопки языка */
   }
 
   .hamburger span {
@@ -717,6 +719,11 @@ footer {
     color: #000;
   }
 
+  .language-toggle {
+    margin-right: 8px; /* Уменьшаем отступ справа и добавляем слева */
+    margin-left: 8px; /* Добавляем отступ слева для баланса */
+  }
+
   .lang-button {
     padding: 5px 8px;
     font-size: 10px;
@@ -729,7 +736,7 @@ footer {
   .theme-toggle {
     padding: 5px 8px;
     font-size: 10px;
-    margin-left: 6px;
+    margin-left: 8px; /* Увеличиваем отступ слева для отделения от кнопки языка */
   }
 
   main {
